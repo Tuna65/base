@@ -43,7 +43,7 @@ function Login() {
       <div className="Login__inner">
         <div className="left">
           <div className="logo">
-            <div className="bg"></div>
+            <div className="bg">Đăng nhập vào hệ thống</div>
           </div>
           <div className="login-form">
             <div className="">
