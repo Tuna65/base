@@ -23,12 +23,10 @@ function Login() {
     password: "",
   });
   const isAuthenticate = useSelector(authIsAuthenSelector);
-  console.log(isAuthenticate);
   const handleLoginForm = async () => {
     try {
       const res: any = await authApis.login(dataLoginForm);
       if (res) {
-        console.log(res.data);
         localStorage.setItem("TOKEN_DA", res.data.accessToken);
         localStorage.setItem("userId", res.data.dataUser._id);
 
